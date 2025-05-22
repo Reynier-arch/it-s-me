@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT', sans-serif;
+  background: #fffaf6;
+  color: #444;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe5b4;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.intro {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: url('alicia.jpg') no-repeat center center/cover;
+  color: white;
+  position: relative;
+}
+
+.intro h2, .intro p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Add overlay for better text visibility */
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+
+.cards {
+  padding: 4rem 2rem;
+  background: #fffdf9;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.highlights {
+  background: #fff0d9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fffaf1;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #ffe5b4;
+  color: #555;
+}
